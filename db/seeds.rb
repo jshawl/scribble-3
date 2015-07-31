@@ -7,6 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # Test comment
 # test comment 2
+#test comment 3
+
 
 Post.destroy_all
 Comment.destroy_all
