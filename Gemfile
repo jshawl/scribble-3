@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bcrypt'
+
 group :production do
   gem 'rails_12factor'
 end
