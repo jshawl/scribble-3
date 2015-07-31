@@ -1,0 +1,14 @@
+<%= form_for([@post, @comment]) do |f| %>
+
+<%= f.label :text_body %>
+<%= f.text_field :text_body %>
+
+<%= f.label :photo_url %>
+<%= f.text_field :photo_url %>
+
+<%= f.label :author %>
+<%= f.text_field :author %>
+
+  <%= f.submit %>
+
+<% end %>

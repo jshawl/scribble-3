@@ -1,0 +1,16 @@
+<h2><%= @post.subject %> <a href="/posts/<%= @post.id %>/edit">(edit)</a></h2>
+<h4><%= @post.text_body %></h4>
+
+<img class='abc' src="<%= @post.photo_url %>">
+
+<h3>Comments <%= link_to "(+)", new_post_comment_path(@post)%></h3>
+
+<ul>
+  <% @post.comments.each do |comment| %>
+    <!-- build the list element for each song -->
+    <li>
+      <%= link_to "#{comment.text_body} (#{comment.author})", post_comment_path(@post, comment) %>
+    </li
+
+  <% end %>
+</ul>

@@ -1,0 +1,9 @@
+<h2>Comments <a href="/comments/new">(+)</a></h2>
+
+<ul>
+  <% @comments.each do |comment| %>
+  <li>
+   <%= link_to "#{comment.text_body} - #{comment.post.subject}",post_comment_path(comment.post,comment) %>
+ </li>
+  <% end %>
+</ul>

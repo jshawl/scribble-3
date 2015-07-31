@@ -1,0 +1,26 @@
+<h2>Edit Comment</h2>
+
+<form action="/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="comment[text_body]">Comment Body:</label>
+  <input name="comment[text_body]">
+
+  <label for="comment[author]">Comment Auhor</label>
+  <input name="comment[author]">
+
+  <label for="comment[photo_url]">Preview URL:</label>
+  <input name="comment[photo_url]">
+
+  <label for="comment[post_id]">Post ID:</label>
+  <input name="comment[post_id]">
+
+  <input type="submit" value="Create">
+</form>
+
+<form action="/comments/<%= @song.id %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>

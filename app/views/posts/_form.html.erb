@@ -1,0 +1,17 @@
+<%= form_for @post do |f| %>
+
+  <%= f.label :subject %>
+  <%= f.text_field :subject %>
+
+  <%= f.label :text_body %>
+  <%= f.text_field :text_body %>
+
+  <%= f.label :photo_url %>
+  <%= f.text_field :photo_url %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.submit %>
+
+<% end %>
