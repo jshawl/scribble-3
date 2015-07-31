@@ -8,17 +8,17 @@
 </head>
 <%= image_tag "scribble.gif" %>
 <body>
-  <h1>Scribble</h1>
+  <h1>Scribble</h1><br>
     <nav>
       <% if session[:user] %>
-      <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a></h2>
+      <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a></h2><br>
     <% else %>
-      <a href="/sign_up">Sign up</a>
-      <a href="/sign_in">Sign in</a>
+      <a href="/sign_up">Sign up</a><br>
+      <a href="/sign_in">Sign in</a><br>
     <% end %>
 
-      <a href="/comments">Comments</a>
-      <a href="/posts">Posts</a>
+      <a href="/comments">Comments</a><br>
+      <a href="/posts">Posts</a><br>
     </nav>
     <h2><%= flash[:notice] %>
 <%= yield %>
