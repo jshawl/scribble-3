@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Post.destroy_all
+Comment.destroy_all
+
+post1 = Post.create(subject:"Test Subject", text_body:"Post Body XYZ", photo_url:"http://xyz", author:"AnandM", date_created:"123")
+
+comment1 = Comment.create(text_body:"coment text XYZ", photo_url:"http://xyz", author:"AnandG", date_created:"321", post:post1 )
