@@ -18,6 +18,8 @@ post2 = Post.create(subject:"Blog Post 2", text_body:"At vis reque mazim, pro in
 
 comment1 = Comment.create(text_body:"coment text XYZ1", photo_url:"http://xyz", author:"AnandG", date_created:"21", post:post1 )
 # comment2 = Comment.create(text_body:"coment text XYZ2", photo_url:"http://xyz", author:"AnandL", date_created:"321", post:post1 )
+# Excellent seeds!
+# Could also seed user data to facilitate associating posts with users.
 
 
 comment3 = Comment.create(text_body:"coment text XYZ1", photo_url:"http://xyz", author:"AnandH", date_created:"31", post:post2 )

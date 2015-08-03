@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'posts#index'
     get '/comments', to: 'comments#index'
+    # typically comments are only shown for a particular post.
     resources :posts do
       resources :comments
     end
